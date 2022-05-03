@@ -1,0 +1,151 @@
+main{
+    margin: 0 2rem;
+}
+.top-section{
+    display: flex;
+    position: relative;
+    margin: 1.5rem 0.5rem;
+}
+.top-section > .rides > .ride-btn{
+  margin-right: 1.5rem;
+  padding: 0.5rem;
+}
+.top-section .filter{
+    margin-left: auto;
+}
+.ride-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #D0CBCB;
+}
+.ride-btn:hover{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+article{
+    background-color: #171717;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.image-container{
+    width: 296px;
+    height: 148px;
+    border-radius: 0.5rem;
+}
+.image-container .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+.description{
+    margin-left: 3rem;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    color: #CFCFCF
+}
+.description >h3 > span{
+    margin-left: 0.5rem;
+    color: #fff;
+}
+.location{
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+.location .location-btn{
+    width: 8.8rem;
+    height: max-content;
+    border-radius: 1.6rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 4px 10px;
+}
+.loading{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 10px dashed grey;
+    text-align: center;
+    /* margin: 0 auto; */
+    animation: rotate 1.7s ease-out infinite;
+}
+@keyframes rotate{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+.modal-container{
+    position: absolute;
+    top: 13rem;
+    right: 2.2rem;
+    width: 228px;
+    height: 190px;
+    background: #131313;
+    color: #A5A5A5;
+    border-radius: 15px;
+    text-align: center;
+    padding: 2rem;
+}
+.modal-container .heading{
+    text-transform: capitalize;
+    text-align: left;
+    padding:0px 0px 1.5rem 1rem;
+}
+.modal-container .underline{
+    width: 158px;
+    height: 0px;
+    border: 1px solid #CBCBCB;
+    margin: 0 auto;
+}
+.modal-container > .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container>.form > select{
+    width: 168.45px;
+    height: 37.5px;
+    background: #232323;
+    color: #A5A5A5;
+    border-radius: 4.68775px;
+    margin: 1rem 0;
+}
+.modal-container>.form>select:hover{
+    color: #fff;
+}
+.active {
+    background-color: #000;
+    color: #fff;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+
+
+@media (max-width: 600px) {
+    article{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .location, .description{
+        margin: 0;
+        margin-top: 1rem;
+    }
+   
+}
+
