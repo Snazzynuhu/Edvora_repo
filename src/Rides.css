@@ -23,6 +23,18 @@ main{
     color: #fff;
     border-bottom: 2px solid #fff;
 }
+.filter{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.filter > .filter-icon{
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+.filter >span{
+    text-transform: capitalize;
+}
 article{
     background-color: #171717;
     /* display: grid; */
@@ -51,6 +63,9 @@ article{
     line-height: 22px;
     color: #CFCFCF
 }
+.description>h3{
+    text-transform: capitalize;
+}
 .description >h3 > span{
     margin-left: 0.5rem;
     color: #fff;
@@ -68,6 +83,7 @@ article{
     border: none;
     color: #fff;
     padding: 4px 10px;
+    text-transform: capitalize;
 }
 .loading{
     position: absolute;
